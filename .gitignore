@@ -1,1 +1,10 @@
-*.~
+*.*~
+*/backup/*
+*.out
+*.aux
+*.log
+*.nav
+*.snm
+*.bbl
+*.toc
+*.xml
