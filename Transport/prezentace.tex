@@ -1,0 +1,156 @@
+\documentclass[czech]{beamer}
+
+\input{packages.tex}
+\input{makra.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+%\usetheme{Warsaw}
+\usetheme{Boadilla}
+% or ...
+
+\usecolortheme{orchid}
+\setbeamertemplate{footline}[text line]{} % makes the footer EMPTY
+
+% \setbeamercovered{transparent}
+
+\AtBeginSection[]{%
+	\addtocounter{framenumber}{-1}
+  	\begin{frame}[t]
+   	\centering\frametitle{\parttitle}
+   	\tableofcontents[currentsection, hideothersubsections]
+	\end{frame}
+}
+
+\begin{document}
+
+\everymath{\displaystyle}
+%\beamerdefaultoverlayspecification{<+->}
+
+% For every picture that defines or uses external nodes, you'll have to
+% apply the 'remember picture' style. To avoid some typing, we'll apply
+% the style to all pictures.
+\tikzstyle{every picture}+=[remember picture]
+\tikzstyle{na} = [baseline=-.5ex]
+
+
+\title{Deterministické řešení transportní rovnice neutronů}
+\author{Milan Hanuš,\\[.2em]
+{\small\textcolor{ltgrey}{KMA, FAV ZČU Plzeň}}}
+\date[MORF 1]{{Transportní rovnice v reaktorové fyzice}\\[.2em]
+{\small\textcolor{ltgrey}{15. 4. 2009}}}
+
+\begin{frame}[label=s0]
+	\titlepage
+\end{frame}
+
+\begin{frame}[allowframebreak]
+%	\frametitle{Přehled}
+ 	  \tableofcontents
+\end{frame}
+
+%\part{Transportní rovnice neutronů}
+%
+  \section{Předpoklady a definice}
+    \input{slides/definice.tex}
+  \section{Bilance směrového neutronového toku}
+    \input{slides/transport.tex}
+  \section{Různé podoby rovnice transportu neutronů}
+    \input{slides/podoby.tex}
+  \section{Rovnice "doleva/doprava"}
+    \input{slides/doleva_doprava.tex}
+  \section{Matematická reprezentace směrové závislosti}
+    \input{slides/rozptyl.tex}
+
+%\begin{frame}[allowframebreak]
+%%	\frametitle{Přehled}
+% 	  \tableofcontents[part=1]
+% 	  \vspace{-.5em}\tocrule\smallskip
+% 	  \tableofcontents[part=2]
+% 	  \vspace{-.5em}\tocrule\smallskip
+%   	\tableofcontents[part=3]
+%\end{frame}
+%
+%\part{Transportní rovnice neutronů}
+%
+%  \section{Předpoklady a definice}
+%    \input{slides/definice.tex}
+%    % zmínit křivočaré souřadnice
+%  \section{Bilance směrového neutronového toku}
+%    \input{slides/transport.tex}
+%    % zmínit zpožděné neutrony
+%  \section{Různé podoby}
+%    \input{slides/podoby.tex}
+%    % zmínit paritní
+%  \section{Matematická reprezentace rozptylu neutronů}
+%    \input{slides/rozptyl.tex}
+%    
+%
+%\part{Monoenergetická transportní rovnice v 1D}
+%
+%  \section{Rovnice "doleva/doprava"}
+%    \input{slides/doleva_doprava.tex}
+%  \section{Směrová závislost s azimutální symetrií}
+%    \input{slides/1D.tex}
+%  \subsection{Metoda $P_N$}
+%    \input{slides/PN.tex}
+%  \subsection{Metoda $S_N$}
+%    \input{slides/SN.tex}
+%
+%  \section{Iterační řešení}
+%    \input{slides/SN_iterace.tex}
+%
+%\part{Reálné úlohy -- metody řešení 3D transportní rovnice}
+%
+%  \section{Potíže s metodami $P_N$, $S_N$ ve více dimenzích}
+%  \section{Metoda $SP_N$}
+
+%\section{Monoenergetická transportní rce. ve více dimenzích}
+
+%\subsection{Sférické harmonické funkce}
+%\subsection{Potíže s metodami $P_N$, $S_N$}
+%\subsection{Metoda $SP_N$}
+%\subsubsection{Formální odvození}
+%\subsubsection{Teoretické vlastnosti}
+%\subsubsection{Numerická ukázka}
+
+%\section{Aproximace energetické závislosti}
+
+\begin{frame}[label=slide17]
+  \frametitle<presentation>{Literatura}
+  
+	
+  \begin{thebibliography}{\textwidth}       
+  \beamertemplatearticlebibitems
+	\footnotesize
+	\bibitem[Ch]{Chao}
+  {J. E. Hoogenboom}
+	\newblock {T}HE TWO-DIRECTION NEUTRAL-PARTICLE TRANSPORT MODEL: A USEFUL TOOL FOR RESEARCH AND EDUCATION
+	\newblock {\em {T}ransport {T}heory and {S}tatistical {P}hysics}, 37:65--108, 2008.
+
+	\bibitem[FC]{Fu}
+	{W. M. Stacey}
+	\newblock Nuclear Reactor Physics (Chap. 9).
+	\newblock {\em John Wiley \& Sons, Inc., New York}, 
+	  2001.
+
+	\bibitem[Wag]{Wagner}
+	{P}. {R}euss
+	\newblock {N}eutron {P}hysics
+	\newblock {\em EDP Sciences}, 2008.
+	
+	\bibitem[DTL]{Dautray}
+	{R. Dautray and J.-L. Lions}
+	\newblock{Mathematical Analysis and Numerical Methods for Science and Technology:
+  	6 -- Evolution Problems II (\S 6)}
+  \newblock{\em Springer}, 2000.
+	
+	\bibitem[SAN]{Sansone}
+		{G. Sansone}
+	\newblock{Orthogonal Functions (Chap. 3)}
+  \newblock{\em Dover Publications}, 2004.
+	\end{thebibliography}
+	
+\end{frame}
+
+\end{document}

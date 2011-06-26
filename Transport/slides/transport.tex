@@ -1,0 +1,228 @@
+\begin{frame}[t]
+  \frametitle{Bilance směrového neutronového toku}
+
+  \alert<3>{Časová změna množství neutronů v elementu stavového prostoru $=$}
+  \begin{itemize}
+	  \item[$+$] \alert<4>{množství nově se objevivších neutronů}
+	  \item[$-$] \alert<5>{množství zachycených neutronů}
+	  \item[$-$] \alert<6>{množství neutronů uniklých přes hranici}
+  \end{itemize}
+  
+  \uncover<2->{
+    \vspace{1em}
+    Pomocí $\angflux$, u nějž předpokládáme
+    \begin{itemize}
+    	\item spojitou diferencovatelnost vzhledem k $t$\uncover<7->{, $\br$}
+    \end{itemize}
+    \shorten{-.4em}{0em}
+    \alt<1-9>{
+    \begin{multline*}
+      {\color<3>{red}\Vint{\Eint{\Aint{\frac{1}{v(E)}\pd{\angflux(\br,E,\bomega,t)}{t}}}}} = 
+      {\color<4>{red}\Vint{\Eint{\Aint{P(\br,E,\bomega,t)}}}}\\
+      - {\color<5>{red}\Vint{\Eint{\Aint{\Sigma_t(\br,E,\bomega,t)\angflux(\br,E,\bomega,t)}}}}\\
+      - \alt<1-6>{
+          {\color<6>{red}\int_{\bnd}\Eint{\Aint{\bj(\br,E,\bomega,t)\bn(\br)\d{S}}}}
+        }{
+          \alt<7>{
+            \Vint{\Eint{\Aint{\nabla\cdot\bj(\br,E,\bomega,t)}}}
+          }{
+            \Vint{\Eint{\Aint{\bomega\cdot\nabla\angflux(\br,E,\bomega,t)}}}
+          }
+        }
+     \end{multline*}
+     }{
+     \begin{align*}
+      \frac{1}{v(E)}\pd{\angflux(\br,E,\bomega,t)}{t} &=
+      P(\br,E,\bomega,t)\\[-.25em]
+      &- \Sigma_t(\br,E,\bomega,t)\angflux(\br,E,\bomega,t)\\[.4em]
+      &- \bomega\cdot\nabla\angflux(\br,E,\bomega,t)
+      \end{align*}
+     }
+    \lengthen
+    \uncover<8-10>{ \alt<8-9>{($\bomega$ nezávisí na $\br$ \only<9>{-- \alert{ale jen v kartézských souřadnicích!}})}{($\d{\br}\d{E}\d{\bomega}$ libovolné)} }
+  }
+\end{frame}
+
+\begin{frame}
+  \frametitle{Bilance směrového neutronového toku}
+  \framesubtitle{Zdrojový člen}
+    \shorten{-.35em}{-.35em}
+    \begin{multline*}
+    \frac{1}{v(E)} {\pd{\angflux(\br,E,\bomega,t)}{t}} = \\
+    {\alert<2-3>{P(\br,E,\bomega,t)}}
+    - {\Sigma_t(\br,E,\bomega,t)\angflux(\br,E,\bomega,t)}
+    - {\bomega\cdot\nabla\angflux(\br,E,\bomega,t)}
+    \end{multline*}
+    \pause
+    \temporal<3>{
+      \begin{align*}
+        {\alert{P(\br,E,\bomega,t)}} &= 
+          \aintp{\eintp{\nu\Sigma_{\color{cyan}{f}}(\br,E',t)\chi_{\color{cyan}{f}}(E'\ra E,\, \bomega'\ra\bomega)\angflux(\br,E',\bomega',t)}}\\
+          &+
+          \aintp{\eintp{\Sigma_{\color{magenta}{s}}(\br,E',t)\chi_{\color{magenta}{s}}(E'\ra E,\, \bomega'\ra\bomega)\angflux(\br,E',\bomega',t)}}\\[.25em]
+          &+
+          {Q(\br,E,\bomega,t)}
+      \end{align*}
+    }{
+      \begin{align*}   
+        {\alert{P(\br,E,\bomega,t)}} &= 
+          \frac{1}{4\pi}\eintp{\nu\Sigma_{\color{black}{f}}(\br,E',t)\chi_{\color{black}{f}}(E'\ra E){\color{black}\fl(\br,E',t)}}\\
+          &+
+          \aintp{\eintp{\Sigma_{\color{black}{s}}(\br,E',t)\chi_{\color{black}{s}}(E'\ra E,\, \bomega'\cdot\bomega)\angflux(\br,E',\bomega',t)}}\\[.25em]
+          &+
+          {Q(\br,E,\bomega,t)}
+      \end{align*}
+    }{
+      \begin{align*}   
+        {P(\br,E,\bomega,t)} &= 
+          \frac{1}{4\pi}\eintp{{\color{red}
+            \alt<4>{
+              \nu\Sigma_f(\br,E',t)\chi_f(E'\ra E)
+             }{
+              \nu\Sigma_f(\br,E'\ra E,t)
+             }}\fl(\br,E',t)}\\
+          &+
+          \aintp{\eintp{{\color{red}
+            \alt<4>{
+              \Sigma_s(\br,E',t)\chi_s(E'\ra E,\, \bomega'\cdot\bomega)
+            }{
+              \Sigma_s(\br,E'\ra E,\, \bomega'\cdot\bomega,t)
+            }}\angflux(\br,E',\bomega',t)}}\\[.25em]
+          &+
+          {Q(\br,E,\bomega,t)}
+      \end{align*}
+    }   
+    \lengthen
+    \vspace*{-.4em}
+    \uncover<3-5>{
+      \begin{itemize}
+      	\item předpoklady na izotropii
+      	\item veškeré štěpení pro jednoduchost okamžité, bez zpožděných neutronů
+      \end{itemize} 
+    }     
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Doplňující předpoklady a podmínky}
+  \begin{itemize}
+  	\item Pro skoro všechna $x\in X$: 
+  	$$
+  	\begin{gathered}
+	    \begin{array}{ccl}
+	    0 \leq& \!\!\!\Sigma_t(x,t)\!\!\! &< \infty,\\
+	    0 \leq& \!\!\!\angflux(x,t)\!\!\! &< \infty,\\
+	    0 \leq& \!\!\!Q(x,t)\!\!\! &< \infty,
+	    \end{array}\\
+	    \Sigma_t,\, \angflux\, \not\equiv 0.
+	    \end{gathered}
+    $$
+    \item $\Sigma_t(\cdot,t)\in L^{\infty}(X)$,~ $\angflux(\cdot,t),\, Q(\cdot,t)\, \in \Lp{1}(X)$\vspace{.5em}
+    \item $\aint{\eint{\chi_{s,f}(E'\ra E, \bomega'\ra \bomega)}} = 1$\vspace{.5em}
+    \item Počáteční podmínka: $\angflux(\br,E,\bomega,t_0) = \Psi_0(\br,E,\bomega)$\vspace{.5em}
+    \item Okrajové podmínky na \emph{\color{structure}vtokové hranici}
+  \end{itemize}
+  
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{Okrajové podmínky}
+  \framesubtitle{Pomocné definice}
+  
+  \begin{itemize}
+  	\item Homogenní / nehomogenní hranice: $\pV = \pVn \cap \pVh$
+  	\hspace*{-3em}
+  	\begin{minipage}{\paperwidth}
+    $$
+      \angflux_{\mathrm{in}}(\br,E,\bomega,t) = \begin{cases}
+      \Psi_{\mathrm{in}}(\br,E,\bomega,t)\\
+      0
+      \end{cases}\hspace{-1em},\
+      \angflux_h(\br,E,\bomega,t) = \begin{cases}
+      0 & \br\in\pVn\\
+      \Psi_h(\br,E,\bomega,t) & \br\in\pVh
+      \end{cases}
+    $$
+    \end{minipage}\vspace{.75em}
+    \item Vtoková / odtoková hranice:
+  	$$
+      \only<1>{\pX[\pm]}\only<2>{\pX[\pm]_{\;\color{red}0}}\only<3>{\pX[\pm]_{\,\color{red}h}} = 
+        \bigl\{
+          x = ({\color{cyan}\br}, {\color{magenta}E}, {\color{dkgreen}\bomega)}:
+          {\color{cyan}\br \in \only<1>{\pV}\only<2>{\pV_{\color{red}0}}\only<3>{\pV_{\color{red}h}}},\ 
+          {\color{magenta} E \in \EE},\ 
+          {\color{dkgreen}\bomega\in\SS\land\bomega\cdot\bn(\br) \gtrless 0}
+        \bigr\}
+    $$
+    \item Úhel zrcadlového odrazu (\emph{specular reflection}):
+    \shorten{-.1em}{-1.5em}
+    $$
+      \bomega_R = \bomega - 2 \bn (\bomega \cdot \bn)
+    $$
+    \lengthen
+    \begin{itemize}
+    	\item Householderova transf. vektoru $\bomega$ vzhledem k rovině s normálou $\bn$
+    	\item Úhel odrazu $=$ úhel dopadu:  $\abs{\bomega\cdot\bn} = \abs{\bomega_R\cdot\bn}$
+    	\item Úhel odrazu leží ve stejné rovině jako úhel dopadu: $(\bomega_R\times\bn)\cdot\bn = 0$
+    \end{itemize}
+    
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Okrajové podmínky}
+  \framesubtitle{Vybrané typy}
+  $$
+    \angflux(x,t) = \angflux_{\mathrm{in}}(x,t) + \alert<2->{\angflux_h(x,t)},\quad x = (\br,E,\bomega)\in\pX
+  $$
+  \pause
+  \begin{itemize}
+  	\item<3-> \alt<3>{Nonreentrantní}{Volná} hranice\uncover<5->{
+  	-- rozhranní mezi zkoumaným prostředím a
+    vakuem, příp. perfektním absorbérem (\emph{black body})
+  	$$
+  	  \angflux_h(x,t) = 0,\quad x\in\pX[-]_h
+  	  \qquad (\Longrightarrow\ \ j^{-}(\br,E,t) = 0)
+  	$$
+  	}    
+  	\item<6-> Zrcadlový odraz (\emph{specular reflection})
+  	$$
+  	  \angflux_h(x,t) = \angflux(\br,E,\bomega_R,t),\quad x\in\pX[-]_h
+  	$$
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Okrajové podmínky}
+  \framesubtitle{Vybrané typy}
+  \shorten{-.5em}{-1em}
+  $$
+    \angflux(x,t) = \angflux_{\mathrm{in}}(x,t) + \alert<1-2>{\angflux_h(x,t)},\quad x = (\br,E,\bomega)\in\pX
+  $$
+  \lengthen
+  \begin{itemize}
+  	\item Okrajová podmínka typu albedo
+  	$$
+  	  \angflux_h(x,t) = \bndint[']{\pX[+]_h}\beta(x'\ra x,t)\angflux(x',t),\quad x\in\pX[-]_h,
+  	$$
+  	kde $\db{x'} = \abs{\bomega'\cdot\bn}\d{S}\d{E'}\d{\bomega'}$
+  	
+  	\uncover<2->{
+  	\begin{myitemize}
+  	 	\item $\beta$ charakterizuje případy, kdy v okamžiku $t$ neutron opouští prostředí\\
+  	 	  v místě $\br'$, s energií $E'$ a ve směru $\bomega'$ a jiný neutron se vrací\\
+  	 	  v jiném místě $\br$, s jinou energií $E$ a v jiném směru $\bomega$.
+      \item Jiné typy podmínek lze získat lokalizací, např. zrcadlový odraz:\\[.3em]\centering 
+        $\beta(\br'\ra \br, E'\ra E, \bomega'\ra\bomega,t) = \delta(\br' - \br)\delta(\bomega' - \bomega_R)\delta(E' - E)$
+  	 \end{myitemize}\vspace{.2em}
+  	}
+  	\item<3-> Spojitost směrového toku na vnitřních rozhranních ($\forall E,\ \bomega$)
+  \end{itemize}
+
+\end{frame}
+
+%TODO: White B.C, isotropic reflection, source condition
+

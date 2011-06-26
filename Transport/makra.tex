@@ -1,0 +1,134 @@
+\newcommand{\bomega}{\ensuremath{\mathbf{\Omega}}}
+\newcommand{\tinydot}{\mbox{\tiny{\textbullet}}}
+\newcommand{\keff}{\ensuremath{k_{\mathrm{eff}}}}
+\newcommand{\br}{\ensuremath{\mathbf{r}}}
+\newcommand{\bn}{\ensuremath{\mathbf{n}}}
+\newcommand{\bj}{\ensuremath{\mathbf{j}}}
+\newcommand{\bJ}{\ensuremath{\mathbf{J}}}
+
+\newcommand{\RR}[1][]{\mathbb{R}^{#1}}
+
+\newcommand{\EE}{\mathcal{E}}
+\renewcommand{\SS}{\ensuremath{\mathcal{S}}}
+\newcommand{\VV}{\mathcal{V}}
+
+\newcommand{\bnd}{\ensuremath{\partial\VV}}
+\newcommand{\pX}[1][]{\partial X^{#1}}
+\newcommand{\pV}[1][]{\partial \VV}
+\newcommand{\pVh}[1][]{\partial \VV_h}
+\newcommand{\pVn}[1][]{\partial \VV_{0}}
+
+\newcommand{\pd}[3][]{\ensuremath{\frac{\partial^{#1}#2}{\partial #3^{#1}}}}
+\newcommand{\der}[3][]{\ensuremath{\frac{\mathrm{d}^{#1}{#2}}{\mathrm{d} {#3}^{#1}}}}
+
+\newcommand{\abs}[1]{\ensuremath{\left\vert#1\right\vert}}
+\newcommand{\norm}[2][]{\ensuremath{\lvert\lvert#2\rvert\rvert_{#1}}}
+
+\newcommand{\Rabullet}{\ensuremath{\structure{\Rightarrow}}}
+\newcommand{\ra}{\ensuremath{\!\rightarrow\!}}
+\newcommand{\la}{\ensuremath{\!\leftarrow\!}}
+
+\newcommand{\eint}[1]{\ensuremath{\int_{0}^{\infty}#1\,\d{E}}}
+\newcommand{\Eint}[2][\EE]{\ensuremath{\int_{#1}{#2}\,\d{E}}}
+\newcommand{\vint}[1]{\ensuremath{\int_{\VV}{#1}\,\d{\br}}}
+\newcommand{\Vint}[2][\VV]{\ensuremath{\int_{#1}{#2}\,\d{\br}}}
+\newcommand{\aint}[1]{\ensuremath{\int_{4\pi}{#1}\,\d{\bomega}}}
+\newcommand{\Aint}[2][\SS]{\ensuremath{\int_{#1}{#2}\,\d{\bomega}}}
+\newcommand{\eintp}[1]{\ensuremath{\int_{0}^{\infty}#1\,\d{E'}}}
+\newcommand{\vintp}[1]{\ensuremath{\int_{\VV}{#1}\,\d{\br'}}}
+\newcommand{\aintp}[1]{\ensuremath{\int_{4\pi}{#1}\,\d{\bomega'}}}
+\newcommand{\bndint}[2][]{\displaystyle\int_{#2}\db{x#1}}
+\newcommand{\db}[1]{\ensuremath{\mathrm{d_b}#1\,}}
+\renewcommand{\d}[1]{\ensuremath{\mathrm{d}#1\,}}
+
+\newcommand{\fl}{\ensuremath{\phi}}
+\newcommand{\flux}{\ensuremath{\phi}}
+\newcommand{\afl}{\ensuremath{\psi}}
+\newcommand{\angflux}{\ensuremath{\psi}}
+\newcommand{\angfluxin}{\angflux_{\mathrm{in}}}
+
+\newcommand{\MM}{\ensuremath{\mathbf{M}}}
+\newcommand{\FF}{\ensuremath{\mathbf{F}}}
+\newcommand{\QQ}{\ensuremath{\mathbf{Q}}}
+
+\newcommand{\llop}{\ensuremath{\mathbf{L}}}
+\newcommand{\hhop}[1][]{\ensuremath{\mathbf{H}}_{#1}}
+\newcommand{\ffop}{\ensuremath{\mathbf{F}}}
+\newcommand{\vangflux}{\ensuremath{\boldsymbol{\psi}}}
+\newcommand{\valbedo}{\ensuremath{\boldsymbol{\beta}}}
+
+\newcommand{\vv}{\ensuremath{\mathbf{v}}}
+
+\newcommand{\Lp}[2][]{L_{#1}^{#2}}
+\newcommand{\Wp}[2][]{W_{#1}^{#2}}
+\newcommand{\Id}{I}
+
+\newenvironment{myitemize}{
+\begin{itemize}\vspace*{.5em}
+  \setlength{\itemsep}{1em}
+}{\end{itemize}}
+
+\newcommand{\sumg}{\sum_{\makebox[0pt]{${\scriptscriptstyle{g'\neq g}}$}}}
+\newcommand{\sumr}{\sum_{\scriptscriptstyle{R=f,s}}}
+
+\newcommand{\Sgmr}{\Sigma_{\rightarrow}}
+\newcommand{\Sgml}{\Sigma_{\leftarrow}}
+
+\newcommand{\polar}{\vartheta}
+\newcommand{\azimuthal}{\varphi}
+\renewcommand{\P}[1]{P_{#1}}
+\newcommand{\suma}[3][l]{\sum_{#1=#2}^{#3}}
+\newcommand{\muint}[1][]{\int_{-1}^{1}\d{\mu#1}}
+\newcommand{\muav}{\overline{\mu}_0}
+\newcommand{\sint}{\sin \polar}
+\newcommand{\sinp}{\sin \azimuthal}
+\newcommand{\cost}{\cos \polar}
+\newcommand{\cosp}{\cos \azimuthal}
+\newcommand{\lvec}[1]{\big[#1\big]}
+\newcommand{\lvect}[1]{\big[#1\big]^T}
+
+
+\newcommand{\Y}[2]{Y_{#1}^{#2}}
+\newcommand{\Yc}[2]{\bar{Y}_{#1}^{#2}}
+\newcommand{\kron}[2]{\delta_{#1#2}}
+\newcommand{\angmomgen}[2]{\ensuremath{\phi_{#1#2}}}
+
+
+\definecolor{dkblue}{named}{blue}
+\definecolor{dkgreen}{rgb}{0,0.4,0}
+\definecolor{dkred}{rgb}{0.4,0,0}
+\definecolor{dkgrey}{rgb}{0.4,0.4,0.4}
+\definecolor{ltgrey}{rgb}{0.6,0.6,0.6}
+\colorlet{matA}{black!15}
+\colorlet{matB}{red!30}
+\colorlet{matC}{green!30}
+\colorlet{matAdk}{black!80}
+\colorlet{matBdk}{red!70}
+\colorlet{matCdk}{green!70}
+
+\newcommand{\tocrule}{\hspace{.0342\textwidth}\color{structure}\rule{.618\textwidth}{.25mm}}
+
+\newlength\celldim \newlength\fontheight \newlength\extraheight
+\setlength\celldim{2em}
+\settoheight\fontheight{A}
+\setlength\extraheight{\celldim - \fontheight}
+
+\newcolumntype{A}{ >{\centering \columncolor{matA}} p{.2\linewidth} <{\rule[-.5\extraheight]{0pt}{\extraheight+\fontheight}}}
+\newcolumntype{B}{ >{\centering \columncolor{matB}} p{.2\linewidth} <{\rule[-.5\extraheight]{0pt}{\extraheight+\fontheight}}}
+\newcolumntype{C}{ >{\centering \columncolor{matC}} p{.2\linewidth} <{\rule[-.5\extraheight]{0pt}{\extraheight+\fontheight}}}
+\newcommand{\nl}{\tabularnewline\hline}
+
+\let\Oldpart\part
+\newcommand{\parttitle}{}
+\renewcommand{\part}[1]{\Oldpart{#1}\renewcommand{\parttitle}{#1}}
+
+\def\shorten#1#2{\bgroup
+\addtolength\abovedisplayshortskip{#1}
+\addtolength\abovedisplayskip{#1}
+\addtolength\belowdisplayshortskip{#2}
+\addtolength\belowdisplayskip{#2}
+}
+\def\lengthen{\egroup}
+
+
+%\renewcommand{\bfdefault}{sb}
