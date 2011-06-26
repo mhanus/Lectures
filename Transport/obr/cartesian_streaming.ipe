@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<!DOCTYPE ipe SYSTEM "ipe.dtd">
+<ipe version="70010" creator="Ipe 7.0.10">
+<info created="D:20070221134729" modified="D:20110411142141"/>
+<ipestyle name="ipe6">
+<symbol name="mark/circle(sx)" transformations="translations">
+<path fill="sym-stroke">
+0.6 0 0 0.6 0 0 e
+0.4 0 0 0.4 0 0 e
+</path>
+</symbol>
+<symbol name="mark/disk(sx)" transformations="translations">
+<path fill="sym-stroke">
+0.6 0 0 0.6 0 0 e
+</path>
+</symbol>
+<symbol name="mark/fdisk(sfx)" transformations="translations">
+<group>
+<path fill="sym-stroke" fillrule="eofill">
+0.6 0 0 0.6 0 0 e
+0.4 0 0 0.4 0 0 e
+</path>
+<path fill="sym-fill">
+0.4 0 0 0.4 0 0 e
+</path>
+</group>
+</symbol>
+<symbol name="mark/box(sx)" transformations="translations">
+<path fill="sym-stroke" fillrule="eofill">
+-0.6 -0.6 m
+0.6 -0.6 l
+0.6 0.6 l
+-0.6 0.6 l
+h
+-0.4 -0.4 m
+0.4 -0.4 l
+0.4 0.4 l
+-0.4 0.4 l
+h
+</path>
+</symbol>
+<symbol name="mark/square(sx)" transformations="translations">
+<path fill="sym-stroke">
+-0.6 -0.6 m
+0.6 -0.6 l
+0.6 0.6 l
+-0.6 0.6 l
+h
+</path>
+</symbol>
+<symbol name="mark/fsquare(sfx)" transformations="translations">
+<group>
+<path fill="sym-stroke" fillrule="eofill">
+-0.6 -0.6 m
+0.6 -0.6 l
+0.6 0.6 l
+-0.6 0.6 l
+0 -0.4 m
+0.4 -0.4 l
+0.4 0.4 l
+-0.4 0.4 l
+h
+</path>
+<path fill="sym-fill">
+-0.4 -0.4 m
+0.4 -0.4 l
+0.4 0.4 l
+-0.4 0.4 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="mark/cross(sx)" transformations="translations">
+<group>
+<path fill="sym-stroke">
+-0.43 -0.57 m
+0.57 0.43 l
+0.43 0.57 l
+-0.57 -0.43 l
+h
+</path>
+<path fill="sym-stroke">
+-0.43 0.57 m
+0.57 -0.43 l
+0.43 -0.57 l
+-0.57 0.43 l
+h
+</path>
+</group>
+</symbol>
+<pen name="heavier" value="0.8"/>
+<pen name="fat" value="1.2"/>
+<pen name="ultrafat" value="2"/>
+<symbolsize name="large" value="5"/>
+<symbolsize name="small" value="2"/>
+<symbolsize name="tiny" value="1.1"/>
+<arrowsize name="large" value="10"/>
+<arrowsize name="small" value="5"/>
+<arrowsize name="tiny" value="3"/>
+<color name="red" value="1 0 0"/>
+<color name="green" value="0 1 0"/>
+<color name="blue" value="0 0 1"/>
+<color name="yellow" value="1 1 0"/>
+<color name="gray1" value="0.125"/>
+<color name="gray2" value="0.25"/>
+<color name="gray3" value="0.375"/>
+<color name="gray4" value="0.5"/>
+<color name="gray5" value="0.625"/>
+<color name="gray6" value="0.75"/>
+<color name="gray7" value="0.875"/>
+<dashstyle name="dashed" value="[4] 0"/>
+<dashstyle name="dotted" value="[1 3] 0"/>
+<dashstyle name="dash dotted" value="[4 2 1 2] 0"/>
+<dashstyle name="dash dot dotted" value="[4 2 1 2 1 2] 0"/>
+<textsize name="large" value="\large"/>
+<textsize name="small" value="\small"/>
+<textsize name="tiny" value="\tiny"/>
+<textsize name="Large" value="\Large"/>
+<textsize name="LARGE" value="\LARGE"/>
+<textsize name="huge" value="\huge"/>
+<textsize name="Huge" value="\Huge"/>
+<textsize name="footnote" value="\footnotesize"/>
+<textstyle name="center" begin="\begin{center}" end="\end{center}"/>
+<textstyle name="itemize" begin="\begin{itemize}" end="\end{itemize}"/>
+<textstyle name="item" begin="\begin{itemize}\item{}" end="\end{itemize}"/>
+</ipestyle>
+<ipestyle>
+<layout paper="595 842" origin="0 0" frame="595 842" crop="no"/>
+</ipestyle>
+<page>
+<layer name="alpha"/>
+<layer name="beta"/>
+<layer name="gamma"/>
+<layer name="delta"/>
+<view layers="alpha gamma" active="alpha"/>
+<path layer="delta" matrix="0.666667 0 0 0.347974 123.585 199.584" stroke="black" arrow="normal/normal">
+160 256 m
+160 384 l
+</path>
+<path matrix="0.399348 0 0 0.399348 166.356 186.433" stroke="black" arrow="normal/normal">
+160 256 m
+96 192 l
+</path>
+<path matrix="0.399135 0 0 1.40456 166.39 -70.9025" stroke="black" arrow="normal/normal">
+160 256 m
+288 256 l
+</path>
+<path matrix="0.66225 0 0 0.659731 124.292 119.775" stroke="black" pen="heavier" arrow="normal/small">
+160 256 m
+368 352 l
+</path>
+<path layer="gamma" matrix="-0.058761 0 0 0.846794 377.402 135.221" stroke="black" arrow="normal/normal">
+160 256 m
+160 384 l
+</path>
+<path matrix="0.757047 0 0 0.757717 247.328 158.024" stroke="black" arrow="normal/normal">
+160 256 m
+96 192 l
+</path>
+<path matrix="1 0 0 1 208 96" stroke="black" arrow="normal/normal">
+160 256 m
+288 256 l
+</path>
+<path layer="alpha" matrix="1.38465 0 0 0.661853 -141.553 119.027" stroke="gray3" pen="fat">
+368 352 m
+416 432 l
+</path>
+<path matrix="0.171752 -0.002056 -0.139031 0.314139 422.019 267.598" stroke="gray3" pen="ultrafat">
+22.6274 0 0 22.6274 432 416 e
+</path>
+<path matrix="0.920207 0 0 0.769244 29.3836 81.2259" stroke="gray3" pen="fat">
+368.217 352 m
+447.965 401.078 l
+</path>
+<text layer="delta" matrix="1 0 0 1 85.3689 44.4059" pos="125.762 213.597" stroke="black" type="label" width="5.694" height="4.289" depth="0" halign="center" valign="center">$x$</text>
+<text matrix="1 0 0 1 151.98 65.0469" pos="125.762 213.597" stroke="black" type="label" width="5.242" height="4.297" depth="1.93" halign="center" valign="center">$y$</text>
+<text matrix="1 0 0 1 94.0363 116.067" pos="125.762 213.597" stroke="black" type="label" width="5.071" height="4.289" depth="0" halign="center" valign="center">$z$</text>
+<text layer="gamma" matrix="1 0 0 1 207.707 91.5976" pos="125.762 213.597" stroke="black" type="label" width="5.694" height="4.289" depth="0" halign="center" valign="center">$x$</text>
+<text matrix="1 0 0 1 366.158 129.155" pos="125.762 213.597" stroke="black" type="label" width="5.242" height="4.297" depth="1.93" halign="center" valign="center">$y$</text>
+<text matrix="1 0 0 1 233.109 244.038" pos="125.762 213.597" stroke="black" type="label" width="5.071" height="4.289" depth="0" halign="center" valign="center">$z$</text>
+<text layer="delta" matrix="1 0 0 1 133.504 96.1055" pos="125.762 213.597" stroke="black" type="label" width="5.493" height="5.313" depth="0" halign="center" valign="center" size="large">$\mathbf{r}$</text>
+<path layer="alpha" matrix="1.01977 0.003847 -0.006171 0.635692 -4.88553 126.844" stroke="black" pen="ultrafat" arrow="normal/normal">
+367.983 352.642 m
+437.844 422.486 l
+</path>
+<text matrix="1 0 0 1 287.505 187.202" pos="125.762 213.597" stroke="black" type="label" width="9.714" height="8.203" depth="0" halign="center" valign="center" size="large">$\mathbf{\Omega}$</text>
+<path layer="beta" stroke="gray3" pen="fat">
+103.251 0 0 103.251 367.999 352 e
+</path>
+<path matrix="2.45658 0 0 1.00431 -536.177 -1.69836" stroke="gray3" dash="dashed" pen="fat">
+410.093 352.181 m
+42.0937 0 0 42.0937 367.999 352 325.906 352.211 a
+</path>
+<path matrix="2.45658 0 0 -1.00431 -536.177 705.945" stroke="gray3" pen="fat">
+410.093 352.181 m
+42.0937 0 0 42.0937 367.999 352 325.906 352.211 a
+</path>
+<path matrix="0 2.45658 -1.00431 0 721.667 -551.898" stroke="gray3" dash="dashed" pen="fat">
+410.093 352.181 m
+42.0937 0 0 42.0937 367.999 352 325.906 352.211 a
+</path>
+<path matrix="0 2.45658 1.00431 0 14.023 -551.898" stroke="gray3" pen="fat">
+410.093 352.181 m
+42.0937 0 0 42.0937 367.999 352 325.906 352.211 a
+</path>
+<text layer="alpha" matrix="1 0 0 1 -59.8415 -26.1844" transformations="translations" pos="444.948 406.469" stroke="gray3" type="label" width="16.217" height="8.302" depth="0" valign="baseline" size="large">$\mathrm{d}\mathbf{\Omega}$</text>
+<path layer="gamma" stroke="black" dash="dashed" pen="heavier">
+439.006 397.099 m
+439.006 335.918 l
+</path>
+<path stroke="black" dash="dashed" pen="heavier">
+439.031 335.918 m
+455.404 352.317 l
+</path>
+<path stroke="black" dash="dashed" pen="heavier">
+439.031 335.918 m
+351.639 335.918 l
+</path>
+<path stroke="black" dash="dashed" pen="heavier">
+438.576 397.099 m
+455.31 413.403 l
+</path>
+<path stroke="black" dash="dashed" pen="heavier">
+454.962 352.317 m
+455.404 413.296 l
+</path>
+<path stroke="black" dash="dashed" pen="heavier">
+455.2 413.296 m
+368 413.296 l
+</path>
+<path layer="alpha" stroke="black" arrow="normal/tiny">
+413.997 396 m
+413.997 389.173
+423.555 387.807 s
+</path>
+<text layer="gamma" matrix="1 0 0 1 271.695 108.81" pos="125.762 213.597" stroke="black" type="label" width="12.211" height="6.812" depth="1.49" halign="center" valign="center">$\Omega_x$</text>
+<path stroke="black">
+351.639 335.918 m
+351.639 328.076 l
+</path>
+<path matrix="1 0 0 1 87.3664 0" stroke="black">
+351.639 335.918 m
+351.639 328.076 l
+</path>
+<path matrix="0.707107 0.707107 -0.707107 0.707107 427.914 -150.258" stroke="black">
+351.639 335.918 m
+351.639 328.076 l
+</path>
+<path matrix="0.707107 0.707107 -0.707107 0.707107 444.076 -134.349" stroke="black">
+351.639 335.918 m
+351.639 328.076 l
+</path>
+<path matrix="0 1 -1 0 791.323 61.6566" stroke="black">
+351.639 335.918 m
+351.639 328.076 l
+</path>
+<path stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+351.639 330.177 m
+439.006 329.476 l
+</path>
+<path stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+443.652 331.297 m
+459.513 347.508 l
+</path>
+<path stroke="black" arrow="normal/tiny" rarrow="normal/tiny">
+460.388 413.296 m
+460.388 352 l
+</path>
+<text matrix="1 0 0 1 335.068 119.663" pos="125.762 213.597" stroke="black" type="label" width="11.984" height="6.808" depth="2.85" halign="center" valign="center">$\Omega_y$</text>
+<text matrix="1 0 0 1 343.821 170.081" pos="125.762 213.597" stroke="black" type="label" width="11.786" height="6.812" depth="1.49" halign="center" valign="center">$\Omega_z$</text>
+<path stroke="black" dash="dashed">
+367.845 351.819 m
+439.006 335.918 l
+</path>
+<path matrix="0.977559 0.210664 -0.210664 0.977559 81.2454 -66.5761" stroke="black" arrow="normal/tiny">
+358.904 342.44 m
+12.9575 0 0 12.9575 367.845 351.819 378.221 344.058 a
+</path>
+<path matrix="-0.73409 0.394974 -0.304118 -0.953402 750.372 547.176" stroke="black" rarrow="normal/tiny">
+358.904 342.44 m
+12.9575 0 0 12.9575 367.845 351.819 378.221 344.058 a
+</path>
+<text matrix="1 0 0 1 -1.26639 -0.002542" transformations="translations" pos="367.86 345.873" stroke="black" type="label" width="6.018" height="3.864" depth="1.74" valign="baseline" size="small">$\varphi$</text>
+<text matrix="1 0 0 1 -1.24306 -2.27894" transformations="translations" pos="371.797 363.276" stroke="black" type="label" width="5.465" height="6.227" depth="0" valign="baseline" size="small">$\vartheta$</text>
+</page>
+</ipe>
